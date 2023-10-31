@@ -6,9 +6,9 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['"My Custom Font"', ...defaultTheme.fontFamily.sans]
+				sans: ['"IBM Plex Mono"', ...defaultTheme.fontFamily.sans]
 			}
 		}
 	},
-	plugins: []
+	plugins: [require('@tailwindcss/typography')]
 };

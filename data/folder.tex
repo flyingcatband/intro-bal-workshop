@@ -6,68 +6,92 @@
 \usepackage[scale=0.8]{geometry}
 \usepackage[toc]{multitoc}
 \renewcommand*{\multicolumntoc}{2}
+\usepackage[bottom]{footmisc}
 \usepackage{mathptmx}
 \usepackage{hyperref}
 \usepackage{fontspec}
-
-% See https://tex.stackexchange.com/a/36881
-\newcommand\blankpage{%
-    \null
-    \thispagestyle{empty}%
-    \addtocounter{page}{-1}%
-    \newpage}
-
-
 \begin{document}
-\title{Tunebook demo folder}
-\author{Flying Cat Band}
+\title{Introduction to playing for balfolk}
+\author{James and Caro}
+\date{}
+
+\setmainfont{Silkscreen}
 
 \makeatletter
-\begin{titlepage}
-    \begin{center}
-        \topskip0pt
-        % \vspace*{\fill}
-        {\huge \bfseries  \@title }\\[2ex]
-        {\LARGE  \@author}\\[50ex]
-        % {\large \@date}
-        % \vspace*{\fill}
-    \end{center}
-\end{titlepage}
+    \begin{titlepage}
+        \begin{center}
+            \topskip0pt
+            \vspace*{\fill}
+                \includegraphics[width=0.7\linewidth]{logo.png}\\[4ex]
+                {\huge \bfseries  \@title }\\[2ex] 
+                {\LARGE  \@author}\\[50ex] 
+                {\large \@date}
+            %\vspace*{\fill}
+        \end{center}
+    \end{titlepage}
 \makeatother
 \thispagestyle{empty}
 \newpage
 
 \pagenumbering{gobble}
-\maketitle
+%\maketitle
 \tableofcontents
+
 \clearpage
 
 \setcounter{page}{1} %Start the actually document on page 1
 \pagenumbering{arabic}
 
-% you can filter on sections on the homepage
-\section{Jigs}
-
-% subsection here maps to set in the app
-\subsection{Jigs 1 --- Severn Stars}
-% text here turns into notes on the whole set
-Yes, we like our punny set names
-\abcinput{abc/upton-upon-severn}
-\abcinput{abc/seven-stars}
+\section{Scottishe}
+\subsection{Scottishes}
+\abcinput{abc/longwater}
+\abcinput{abc/rue-de-pres}
+\abcinput{abc/jan-mijne-man}
 \clearpage
 
-\subsection{Jigs 2 --- Lots of jigs}
-This set has lots of tunes, play around with zooming
-\abcinput{abc/cliffs-of-moher}
-\abcinput{abc/spirit-of-the-dance}
-\abcinput{abc/roman-wall}
-\abcinput{abc/kesh}
+\section{Bourrées}
+\subsection{2-time Bourrées}
+\abcinput{abc/commoners-lot}
+\abcinput{abc/absinthe}
+\abcinput{abc/aurore-sand}
+\clearpage
+\subsection{3-time Bourrées}
+\abcinput{abc/huit}
+\abcinput{abc/grandes-potteries}
 \clearpage
 
-\section{Reels}
-\subsection{Reels 1 --- Some reels}
-Probably don't use this set for dancing
-\abcinput{abc/old-morpeth-rant}
-\abcinput{abc/silver-spear}
-\abcinput{abc/paddys}
+\section{Mazurka}
+\subsection{Mazurkas}
+\abcinput{abc/la-chapka}
+\abcinput{abc/motorway-mazurka}
+\abcinput{abc/clement}
+\clearpage
+
+\section{Waltzes}
+\subsection{Waltzes with 3 beats}
+\abcinput{abc/robins}
+\abcinput{abc/walled}
+\abcinput{abc/hirondelles}
+\clearpage
+\subsection{Waltzes with extra beats}
+\abcinput{abc/happy-moments}
+\clearpage
+
+\section{Jig}
+\subsection{Jigs}
+\abcinput{abc/pericondine}
+\abcinput{abc/zelda}
+\abcinput{abc/stiffkey}
+\clearpage
+
+\section{Polka}
+\subsection{Polkas}
+\abcinput{abc/lelan}
+\clearpage
+
+\section{Gavotte de l'Aven}
+\subsection{Gavottes}
+\abcinput{abc/deux-freres}
+\abcinput{abc/simply}
+
 \end{document}

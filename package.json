@@ -14,6 +14,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.27.1",
+		"@tailwindcss/typography": "^0.5.10",
 		"@typescript-eslint/eslint-plugin": "^6.9.0",
 		"@typescript-eslint/parser": "^6.9.0",
 		"autoprefixer": "^10.4.16",
@@ -30,7 +31,11 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@flyingcatband/tunebook": "^0.0.5",
-		"svelte": "^4.2.2"
+		"@flyingcatband/tunebook": "^0.0.6",
+		"@fontsource/ibm-plex-mono": "^5.0.8",
+		"@fontsource/silkscreen": "^5.0.17",
+		"lite-youtube-embed": "^0.3.0",
+		"svelte": "^4.2.2",
+		"svelte-lite-youtube-embed": "^1.1.0"
 	}
 }

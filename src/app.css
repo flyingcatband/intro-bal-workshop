@@ -8,11 +8,12 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 800;
+	font-weight: 400;
+	font-family: 'Silkscreen', sans-serif;
 }
 
 h1 {
-	@apply text-3xl text-center;
+	@apply text-3xl text-center text-purple-600;
 }
 
 h2 {
@@ -20,13 +21,17 @@ h2 {
 }
 
 button {
-	@apply cursor-pointer bg-[#fed700] px-2.5 py-1.5 font-semibold tracking-wide hover:bg-opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fed700];
+	@apply cursor-pointer bg-purple-600 text-white px-2.5 py-1.5 font-bold hover:bg-opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600;
 }
 
 body {
-	@apply accent-[#fed700] touch-pan-y my-4;
+	@apply accent-purple-600 touch-pan-y my-4;
 }
 
 .set-preview {
-	@apply ring-[#fed700] ring-4;
+	@apply ring-purple-600 ring-4;
+}
+
+.prose a {
+	@apply text-purple-600 hover:text-purple-500 focus:text-purple-500;
 }
