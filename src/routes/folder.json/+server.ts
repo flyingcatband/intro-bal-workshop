@@ -7,9 +7,9 @@ export const prerender = true;
 export async function GET(): Promise<Response> {
 	const danceNotes = [
 		{
-			name: 'Scottishe',
+			name: 'Schottische',
 			notes:
-				'We like to play scottishes with a light bounce. Here is an video of what this dance can look like.',
+				'We like to play schottisches with a light bounce. Here is an video of what this dance can look like.',
 			videos: ['s37NJhmU1eQ']
 		},
 		{
