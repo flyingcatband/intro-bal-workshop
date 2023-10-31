@@ -6,7 +6,7 @@
 	<title>Introduction to playing for balfolk - Flying Cat</title>
 </svelte:head>
 
-<section class="prose max-w-[80ch] my-8 mx-auto">
+<section class="prose max-w-[80ch] my-8 px-4 mx-auto">
 	<h1>Introduction to playing for balfolk</h1>
 	<p>
 		Here's a selection of tunes we like to play for Bal dancing. We've picked tunes that we hope are
