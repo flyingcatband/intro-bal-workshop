@@ -31,7 +31,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@flyingcatband/tunebook": "^0.0.6",
+		"@flyingcatband/tunebook": "^0.0.9",
 		"@fontsource/ibm-plex-mono": "^5.0.8",
 		"@fontsource/silkscreen": "^5.0.17",
 		"lite-youtube-embed": "^0.3.0",
